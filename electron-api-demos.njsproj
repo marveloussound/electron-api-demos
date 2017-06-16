@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3a513ed6-8ef9-4cd0-bf92-83e620bd3db6}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>main.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <NodeExePath>C:\Users\koizumi\AppData\Roaming\npm\node_modules\electron-prebuilt\dist\electron.exe</NodeExePath>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="package.json" />
+    <Content Include="CODE_OF_CONDUCT.md" />
+    <Content Include="CONTRIBUTING.md" />
+    <Content Include="docs.md" />
+    <Content Include="ISSUE_TEMPLATE.md" />
+    <Content Include="license.md" />
+    <Content Include="README.md" />
+    <Compile Include="auto-updater.js" />
+    <Compile Include="main.js" />
+    <Compile Include="assets\code-blocks.js" />
+    <Compile Include="assets\demo-btns.js" />
+    <Compile Include="assets\ex-links.js" />
+    <Compile Include="assets\imports.js" />
+    <Compile Include="assets\nav.js" />
+    <Compile Include="assets\normalize-shortcuts.js" />
+    <Compile Include="script\installer.js" />
+    <Compile Include="script\release.js" />
+    <Compile Include="script\windows-store.js" />
+    <Content Include="sections\about.html" />
+    <Compile Include="test\index.js" />
+    <Content Include="assets\css\about.css" />
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\github.css" />
+    <Content Include="assets\css\global.css" />
+    <Content Include="assets\css\nativize.css" />
+    <Content Include="assets\css\nav.css" />
+    <Content Include="assets\css\print.css" />
+    <Content Include="assets\css\section.css" />
+    <Content Include="assets\css\variables.css" />
+    <Content Include="assets\img\about.png" />
+    <Content Include="assets\img\about@2x.png" />
+    <Content Include="assets\img\diagram.png" />
+    <Content Include="assets\img\programming.png" />
+    <Content Include="assets\img\ui-terminology.png" />
+    <Content Include="assets\img\loading.gif" />
+    <Content Include="assets\img\icons.svg" />
+    <Content Include="assets\tiles\SampleAppx.150x150.png" />
+    <Content Include="assets\tiles\SampleAppx.310x150.png" />
+    <Content Include="assets\tiles\SampleAppx.44x44.png" />
+    <Content Include="assets\tiles\SampleAppx.50x50.png" />
+    <Content Include="assets\app-icon\png\1024.png" />
+    <Content Include="assets\app-icon\png\128.png" />
+    <Content Include="assets\app-icon\png\16.png" />
+    <Content Include="assets\app-icon\png\24.png" />
+    <Content Include="assets\app-icon\png\256.png" />
+    <Content Include="assets\app-icon\png\32.png" />
+    <Content Include="assets\app-icon\png\48.png" />
+    <Content Include="assets\app-icon\png\512.png" />
+    <Content Include="assets\app-icon\png\64.png" />
+    <Content Include="assets\app-icon\win\app.ico" />
+    <Compile Include="main-process\communication\async-msg.js" />
+    <Compile Include="main-process\communication\sync-msg.js" />
+    <Compile Include="main-process\media\pdf.js" />
+    <Compile Include="main-process\menus\application-menu.js" />
+    <Compile Include="main-process\menus\context-menu.js" />
+    <Compile Include="main-process\menus\shortcuts.js" />
+    <Compile Include="main-process\system\app-information.js" />
+    <Compile Include="main-process\system\protocol-handler.js" />
+    <Compile Include="main-process\native-ui\dialogs\error.js" />
+    <Compile Include="main-process\native-ui\dialogs\information.js" />
+    <Compile Include="main-process\native-ui\dialogs\open-file.js" />
+    <Compile Include="main-process\native-ui\dialogs\save.js" />
+    <Content Include="main-process\native-ui\tray\iconTemplate.png" />
+    <Content Include="main-process\native-ui\tray\iconTemplate@2x.png" />
+    <Content Include="main-process\native-ui\tray\windows-icon@2x.png" />
+    <Compile Include="main-process\native-ui\tray\tray.js" />
+    <Compile Include="renderer-process\communication\async-msg.js" />
+    <Compile Include="renderer-process\communication\invisible-msg.js" />
+    <Compile Include="renderer-process\communication\sync-msg.js" />
+    <Compile Include="renderer-process\media\desktop-capturer.js" />
+    <Compile Include="renderer-process\media\pdf.js" />
+    <Compile Include="renderer-process\menus\context-menu.js" />
+    <Compile Include="renderer-process\system\app-information.js" />
+    <Compile Include="renderer-process\system\copy.js" />
+    <Compile Include="renderer-process\system\paste.js" />
+    <Compile Include="renderer-process\system\protocol-handler.js" />
+    <Compile Include="renderer-process\system\screen-information.js" />
+    <Compile Include="renderer-process\system\sys-information.js" />
+    <Compile Include="renderer-process\system\version-information.js" />
+    <Compile Include="renderer-process\windows\create-window.js" />
+    <Compile Include="renderer-process\windows\frameless-window.js" />
+    <Compile Include="renderer-process\windows\manage-window.js" />
+    <Compile Include="renderer-process\windows\process-crash.js" />
+    <Compile Include="renderer-process\windows\process-hang.js" />
+    <Compile Include="renderer-process\windows\using-window-events.js" />
+    <Compile Include="renderer-process\native-ui\dialogs\error.js" />
+    <Compile Include="renderer-process\native-ui\dialogs\information.js" />
+    <Compile Include="renderer-process\native-ui\dialogs\open-file.js" />
+    <Compile Include="renderer-process\native-ui\dialogs\save.js" />
+    <Compile Include="renderer-process\native-ui\ex-links-file-manager\ex-links.js" />
+    <Compile Include="renderer-process\native-ui\ex-links-file-manager\file-manager.js" />
+    <Compile Include="renderer-process\native-ui\notifications\advanced-notification.js" />
+    <Compile Include="renderer-process\native-ui\notifications\basic-notification.js" />
+    <Compile Include="renderer-process\native-ui\tray\tray.js" />
+    <Content Include="sections\communication\invisible.html" />
+    <Content Include="sections\communication\ipc.html" />
+    <Content Include="sections\media\desktop-capturer.html" />
+    <Content Include="sections\media\pdf.html" />
+    <Content Include="sections\menus\menus.html" />
+    <Content Include="sections\menus\shortcuts.html" />
+    <Content Include="sections\native-ui\dialogs.html" />
+    <Content Include="sections\native-ui\ex-links-file-manager.html" />
+    <Content Include="sections\native-ui\notifications.html" />
+    <Content Include="sections\native-ui\tray.html" />
+    <Content Include="sections\system\app-sys-information.html" />
+    <Content Include="sections\system\clipboard.html" />
+    <Content Include="sections\system\protocol-handler.html" />
+    <Content Include="sections\system\protocol-link.html" />
+    <Content Include="sections\windows\crash-hang.html" />
+    <Content Include="sections\windows\manage-modal.html" />
+    <Content Include="sections\windows\modal-toggle-visibility.html" />
+    <Content Include="sections\windows\modal.html" />
+    <Content Include="sections\windows\process-crash.html" />
+    <Content Include="sections\windows\process-hang.html" />
+    <Content Include="sections\windows\windows.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets" />
+    <Folder Include="assets\app-icon" />
+    <Folder Include="assets\app-icon\mac" />
+    <Folder Include="assets\app-icon\png" />
+    <Folder Include="assets\app-icon\win" />
+    <Folder Include="assets\css" />
+    <Folder Include="assets\css\fonts" />
+    <Folder Include="assets\img" />
+    <Folder Include="assets\mac" />
+    <Folder Include="assets\tiles" />
+    <Folder Include="electron-api-demos" />
+    <Folder Include="main-process" />
+    <Folder Include="main-process\communication" />
+    <Folder Include="main-process\media" />
+    <Folder Include="main-process\menus" />
+    <Folder Include="main-process\native-ui" />
+    <Folder Include="main-process\native-ui\dialogs" />
+    <Folder Include="main-process\native-ui\tray" />
+    <Folder Include="main-process\system" />
+    <Folder Include="renderer-process" />
+    <Folder Include="renderer-process\communication" />
+    <Folder Include="renderer-process\media" />
+    <Folder Include="renderer-process\menus" />
+    <Folder Include="renderer-process\native-ui" />
+    <Folder Include="renderer-process\native-ui\dialogs" />
+    <Folder Include="renderer-process\native-ui\ex-links-file-manager" />
+    <Folder Include="renderer-process\native-ui\notifications" />
+    <Folder Include="renderer-process\native-ui\tray" />
+    <Folder Include="renderer-process\system" />
+    <Folder Include="renderer-process\windows" />
+    <Folder Include="script" />
+    <Folder Include="sections" />
+    <Folder Include="sections\communication" />
+    <Folder Include="sections\media" />
+    <Folder Include="sections\menus" />
+    <Folder Include="sections\native-ui" />
+    <Folder Include="sections\system" />
+    <Folder Include="sections\windows" />
+    <Folder Include="test" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
